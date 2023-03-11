@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bayn-img img {
+    height: 0;
+}
+
+.bayn-input {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.bayn-label:hover ~ .bayn-img img{
+    height: 30rem;
+    transition: .3s;
+}
+
+.bayn-input:checked ~ .bayn-img img {
+    height: 30rem;
+    transition: .3s;
+}
