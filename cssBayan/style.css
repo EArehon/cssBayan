@@ -9,20 +9,81 @@
     margin: 0 auto;
 }
 
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.icon {
+    visibility: hidden;
+    transition: .3s;
+    fill: brown;
+}
+
+.bayn:hover {
+    color: brown;
+}
+
+.bayn:hover .icon {
+    visibility: visible;
+    fill: brown;
+    transition: .3s;
+}
+
 .bayn-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    border-top: 0.1rem solid gainsboro;
+    padding-top: 0.5rem;
 }
 
 .bayn-label {
     font-weight: bold;
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
+    width: 100%;
+    display: block;
+    transition: .3s;
 }
 
 .bayn-label:hover {
     color: brown;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.bayn-label .icon {
+    transition: .3s ease-in;
+}
+
+.bayn-label:hover .icon {
+    fill: brown;
+    transform: rotate(180deg);
+    transition: .3s ease-in;
+}
+
+.label-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.text-icon .icon{
+    width: 1rem;
+    height: 1rem;
 }
 
 .bayn-img {
@@ -47,4 +108,9 @@
 
 .bayn-input:checked ~ .bayn-label {
     color: brown;
+}
+
+.bayn-input:checked ~ .bayn-label .icon {
+    fill: brown;
+    transform: rotate(180deg);
 }
