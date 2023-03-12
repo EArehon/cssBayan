@@ -114,3 +114,46 @@
     fill: brown;
     transform: rotate(180deg);
 }
+
+
+@media (max-width: 820px) {
+
+    .main {
+        max-width: 95%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .bayn-label {
+        font-size: 1.5rem;
+    }
+
+
+}
+
+
+@media (max-width: 520px) {
+
+    .main {
+        max-width: 95%;
+        min-width: 20rem;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .bayn-label {
+        font-size: 1rem;
+    }
+
+    .bayn-item:hover .bayn-img {
+        height: 10rem;
+    }
+    
+    .bayn-input:checked ~ .bayn-label .bayn-img {
+        height: 10rem;
+    }
+}
